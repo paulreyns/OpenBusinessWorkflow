@@ -1,6 +1,8 @@
+using OpenBusinessWorkflow.Core.Model;
+
 namespace Embedded.Sqlite.Models 
 {
-    public class Claim 
+    public class Claim : WorkflowEntity
     {
         public Claim() 
         {

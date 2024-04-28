@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenBusinessWorkflow.Core",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBusinessWorkflow.Store", "src\OpenBusinessWorkflow.Store\OpenBusinessWorkflow.Store.csproj", "{B85F6A39-5250-4376-83F3-3C613675D3EC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{F3859A5C-1891-436F-882D-9735BC790AA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Embedded.Sqlite", "samples\Embedded.Sqlite\Embedded.Sqlite.csproj", "{9B2BD420-DE19-45F3-8C1F-55016642A023}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{B85F6A39-5250-4376-83F3-3C613675D3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B85F6A39-5250-4376-83F3-3C613675D3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B85F6A39-5250-4376-83F3-3C613675D3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2BD420-DE19-45F3-8C1F-55016642A023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2BD420-DE19-45F3-8C1F-55016642A023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2BD420-DE19-45F3-8C1F-55016642A023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2BD420-DE19-45F3-8C1F-55016642A023}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9C424F56-2D1F-4AFF-865F-76245D5B4A9F} = {3778606A-6CB1-4A01-8C8A-2B59C9C9B8CE}
 		{B85F6A39-5250-4376-83F3-3C613675D3EC} = {3778606A-6CB1-4A01-8C8A-2B59C9C9B8CE}
+		{9B2BD420-DE19-45F3-8C1F-55016642A023} = {F3859A5C-1891-436F-882D-9735BC790AA2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E7EF84FF-5751-4589-8DA2-0565B5D7B1C7}

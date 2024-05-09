@@ -2,14 +2,14 @@ using Embedded.Models;
 
 public class ClaimStore
 {
-    private static readonly List<Claim> _claims = new List<Claim>();
+    private static readonly List<Claim> _claims = new List<Claim>()
+    {
+        // Example Claim for Demo purposes
+        new Claim() { Name = "Test" }
+    };
     
     public List<Claim> List()
     {
-        if (_claims.Count == 0) {
-            _claims.Add(new Claim());
-        }
-
         return _claims;
     }
 

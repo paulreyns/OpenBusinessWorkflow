@@ -6,10 +6,12 @@
 <h1>@ViewData["Title"]</h1>
 
 @{
+    <a href="/Add">Add</a>
     <table>
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Name</th>
             </tr>
         </thead>
         <tbody>
@@ -21,6 +23,9 @@
                 <a href=@url>
                     @claim.Id
                 </a>
+            </td>
+            <td>
+                @claim.Name
             </td>
         </tr>
         }    

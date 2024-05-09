@@ -26,10 +26,12 @@ public class EditModel : PageModel
         }
     }
 
-    public void OnPost()
+    public IActionResult OnPost()
     {
         var claim = store.Get(Id);
+        claim.Name = Name;
         store.Set(claim);
+        return Redirect("/");
     }
 }
 

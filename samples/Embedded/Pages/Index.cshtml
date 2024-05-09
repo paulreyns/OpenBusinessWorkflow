@@ -6,8 +6,8 @@
 <h1>@ViewData["Title"]</h1>
 
 @{
-    <a href="/Add">Add</a>
-    <table>
+    <a href="/Add" class="btn btn-primary">Add</a>
+    <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
@@ -18,11 +18,9 @@
         @foreach (var claim in ViewData.Model._claims)
         {
             var url = "/Edit/" + claim.Id;
-        <tr>
+        <tr onclick="location = '@url'">
             <td>
-                <a href=@url>
-                    @claim.Id
-                </a>
+                @claim.Id
             </td>
             <td>
                 @claim.Name

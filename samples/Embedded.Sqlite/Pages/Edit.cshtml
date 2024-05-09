@@ -1,0 +1,12 @@
+@page "{id}"
+@model EditModel
+@{
+    ViewData["Title"] = "Edit Claim";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <input asp-for="Id" />
+    <input asp-for="Name" />
+    <input type="submit">
+</form>

@@ -4,14 +4,13 @@ using Embedded.Models;
 
 namespace Embedded.Pages;
 
-public class IndexModel : PageModel
+public class AddModel : PageModel
 {
     private readonly ClaimStore _store = new ClaimStore();
-    public List<Claim> _claims = new List<Claim>();
+    public Claim _claim = new Claim();
 
     public void OnGet()
     {
-        _claims = _store.List();
     }
 }
 

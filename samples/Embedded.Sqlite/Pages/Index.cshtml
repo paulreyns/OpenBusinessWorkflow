@@ -5,11 +5,26 @@
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Claims</p>
-
 @{
-    foreach (var claim in ViewData.Model._claims)
-    {
-        <div>@claim.Id</div>
-    }
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var claim in ViewData.Model._claims)
+        {
+            var url = "/Edit/" + claim.Id;
+        <tr>
+            <td>
+                <a href=@url>
+                    @claim.Id
+                </a>
+            </td>
+        </tr>
+        }    
+        </tbody>
+    </table>
+    
 }
